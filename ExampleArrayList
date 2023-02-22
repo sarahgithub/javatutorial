@@ -1,0 +1,31 @@
+package com.app;
+import java.util.ArrayList;
+
+public class ExampleArrayList {
+    public static void main(String[] args) {
+        // Create a new ArrayList
+        ArrayList<String> list = new ArrayList<String>();
+
+        // Add elements to the ArrayList
+        list.add("apple");
+        list.add("banana");
+        list.add("cherry");
+        list.add("date");
+
+        // Print the contents of the ArrayList
+        System.out.println("ArrayList contains: " + list);
+
+        // Access an element of the ArrayList using its index
+        System.out.println("Element at index 2: " + list.get(2));
+
+        // Remove an element from the ArrayList
+        list.remove("cherry");
+        System.out.println("ArrayList after removing cherry: " + list);
+
+        // Check if the ArrayList contains an element
+        System.out.println("ArrayList contains 'banana': " + list.contains("banana"));
+
+        // Get the size of the ArrayList
+        System.out.println("Size of ArrayList: " + list.size());
+    }
+}
