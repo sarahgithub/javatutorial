@@ -1,0 +1,50 @@
+package com.app;
+import java.util.LinkedList;
+
+public class LinkedListExample {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>();
+
+        // Adding elements to the list
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Cherry");
+        list.add("Durian");
+        list.add("Elderberry");
+
+        // Printing the contents of the list
+        System.out.println("Contents of the list: " + list);  // [Apple, Banana, Cherry, Durian, Elderberry]
+
+        // Accessing elements in the list
+        System.out.println("First element in the list: " + list.getFirst());  // Apple
+        System.out.println("Last element in the list: " + list.getLast());    // Elderberry
+        System.out.println("Element at index 2: " + list.get(2));              // Cherry
+
+        // Adding elements to the beginning and end of the list
+        list.addFirst("Apricot");
+        list.addLast("Fig");
+
+        System.out.println("Contents of the list after adding elements: " + list);  // [Apricot, Apple, Banana, Cherry, Durian, Elderberry, Fig]
+
+        // Removing elements from the list
+        list.remove("Banana");
+        list.removeFirst();
+        list.removeLast();
+
+        System.out.println("Contents of the list after removing elements: " + list);  // [Apple, Cherry, Durian, Elderberry]
+
+        // Checking if the list contains an element
+        System.out.println("List contains \"Cherry\": " + list.contains("Cherry"));  // true
+        System.out.println("List contains \"Grape\": " + list.contains("Grape"));    // false
+
+        // Checking the size of the list
+        System.out.println("Size of the list: " + list.size());  // 4
+
+        // Converting the list to an array
+        String[] array = list.toArray(new String[0]);
+
+        for (String element : array) {
+            System.out.println("Element in the array: " + element);
+        }
+    }
+}
