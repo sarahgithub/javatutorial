@@ -1,0 +1,47 @@
+package com.app;
+
+import java.util.HashSet;
+
+public class HashSetExample {
+
+	public static void main(String[] args) {
+		
+	    // Create a new HashSet
+		HashSet<String> set = new HashSet<>();
+
+	    // Add elements to the HashSet
+		set.add("apple");
+		set.add("banana");
+		set.add("orange");
+		set.add("kiwi");
+		set.add("grape");
+		
+
+	    // Print the HashSet
+		System.out.println("HashSet: " + set);
+
+	    // Check if an element is in the HashSet
+		System.out.println("Is banana in the HashSet " + set.contains("banana"));
+
+	    // Remove an element from the HashSet
+		set.remove("kiwi");
+
+	    // Print the HashSet after removing an element
+		System.out.println("HashSet after removing Kiwi:"+ set);
+
+	    // Iterate over the HashSet
+		for(String element:set) {
+			System.out.print(element + " ");
+		}
+		System.out.println();
+
+	    // Clear the HashSet
+		set.clear();
+
+	    // Print the HashSet after clearing it
+		System.out.println("HashSet after clearing :"+ set);
+
+
+	}
+
+}
