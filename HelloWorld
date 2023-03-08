@@ -1,0 +1,19 @@
+package com.app.java.tutorial;
+
+public class HelloWorld {
+	
+	//Starting point of java application
+	
+	/*This is my first
+	 * java application
+	 */
+	static public void main(String[] args)
+	{
+		System.out.println("Hello World!");
+		//method(1)
+		//method(2)
+		System.out.println("My First Java app");
+		System.out.println("First argument: "+ args[0]);
+	}
+}
+
