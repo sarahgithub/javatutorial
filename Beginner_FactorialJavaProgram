@@ -1,0 +1,25 @@
+package com.app.java.tutorial;
+
+/* Factorial 
+ * 5!=5*4*3*2*1=120
+ * 4!=4*3*2*1=24
+ */
+
+public class FactorialJavaProgarm {
+
+	static long calculateFactorial(int number) {
+		long factorial = 1;
+		for (int i = 1; i <= number; i++) {
+			factorial = factorial * i;
+		}
+		return factorial;
+	}
+
+	public static void main(String args[]) {
+		System.out.println("Factorial of 4 is "
+				+ calculateFactorial(4));
+		System.out.println("Factorial of 5 is "
+				+ calculateFactorial(5));
+
+	}
+}
