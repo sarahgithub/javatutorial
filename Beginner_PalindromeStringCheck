@@ -1,0 +1,37 @@
+package com.app.java.tutorial;
+
+/**
+ * Check if a String is palindrome or not
+ * 
+ * aba - palindrome ,radar- palindrome ,level-palindrome
+ * drama- not Palindrome
+ * 
+ *
+ */
+public class PalindromeStringCheck {
+
+	public static boolean isPalindrome(String input) {
+		String reverseString = "";
+		int length = input.length();
+
+		for (int i = length - 1; i >= 0; i--) {
+			reverseString = reverseString + input.charAt(i);
+		}
+		if (reverseString.equalsIgnoreCase(input)) {
+			return true;
+		}
+		return false;
+	}
+
+	public static void main(String args[]) {
+		System.out.println("Is aba Palindrame? "
+				+ isPalindrome("aba"));
+		System.out.println("Is level Palindrame? "
+				+ isPalindrome("level"));
+		System.out.println("Is radar Palindrame? "
+				+ isPalindrome("radar"));
+		System.out.println("Is drama Palindrame? "
+				+ isPalindrome("drama"));
+
+	}
+}
