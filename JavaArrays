@@ -1,0 +1,43 @@
+package com.app.java.tutorial;
+
+public class JavaArrays {
+
+	public static void main(String args[]) {
+
+		// What is an Array in Java?
+		// container to hold elements of same type.
+
+		// Declaring a variable to refer to an array (int,
+		// String, Object)
+
+		int[] numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+		String[] days = { "Monday", "Tuesday", "Wednesday",
+				"Thursday", "Friday", "Saturday" };
+		Person[] people = new Person[2];
+
+		// Creating and Initialize arrays(int, String,
+		// Object)
+		Person person1 = new Person("Person1", 25);
+		Person person2 = new Person("Person2", 30);
+		people[0] = person1;
+		people[1] = person2;
+
+		// Accessing arrays(int, String, Object)
+
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.print(numbers[i] + " ");
+		}
+		System.out.println();
+
+		for (String d : days) {
+			System.out.print(d + " ");
+		}
+
+		System.out.println();
+
+		for (Person p : people) {
+			System.out.println(p.name + " " + p.age);
+		}
+
+	}
+}
